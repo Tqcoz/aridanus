@@ -1,0 +1,119 @@
+html{
+    height: 100%;
+
+}
+
+.col-row-row{
+    display: flex;
+    flex-direction: initial;
+    flex-direction: row;
+}
+body{
+    background-color: rgb(102, 102, 255);
+}
+.column{
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    background-image: linear-gradient( 135deg, #2f3adb 10%, #000DFF 100%);
+    width: 10rem !important;
+    margin-right: 4px;
+    justify-content:center;
+    transition: .5s;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding: 3px 5px;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+.answer-container{
+    background-color: rgb(35, 71, 190);
+    height: 65%;
+    color: black;
+}
+.answer-score{
+    text-align: center;
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+}
+.answer{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+    transition: transform .2s;
+    color: white;
+    background-color: blue;
+}
+.selected-none{
+    border: none !important;
+    font-size: 22px;
+}
+.selected-none:focus{
+    outline: none;
+}
+.column-a{
+    align-items:center;
+    padding-top: 1.5%;
+    border-radius: 10px;
+    line-height: 200px;
+    justify-content:center;
+    display: inline-block;
+    flex-direction: row;
+    cursor: pointer;
+    background: rgb(30, 100, 230);
+    width: 10rem;
+    height: 6em;
+    vertical-align: middle;
+    transition: .5s;
+    
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 1rem;
+}
+.jeopardy-container{
+    background: rgb(49, 49, 255);  /* fallback for old browsers */
+
+}
+
+.row-300{
+    background: rgb(0, 45, 194);
+
+
+}
+.row-400{
+    background: rgb(0, 30, 128);
+
+}
+.row-500{
+    background: rgb(1, 7, 87);
+
+}
+@media (max-width: 1000px){
+    body{
+        zoom: 1.1;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        
+    }
+}
+.page .column-a:hover{
+    opacity: .6;
+    padding: 1rem;
+    transition: .5s;
+}
